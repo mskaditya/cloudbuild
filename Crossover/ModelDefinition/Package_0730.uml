@@ -2,4 +2,128 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="06762b4f-4d2b-4558-bce0-535aecf41eef"
-  name="CloudBuild.Requests.Test" xmlns="http://schemas.microsoft.com/dsltools/ModelStore" />
+  name="CloudBuild.Requests.Test" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="22097e54-2edb-4092-bcb9-7a5bffd98cd9"
+        name="TestRequest"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="811a6506-ea7a-4dfc-9dd2-c17fd2555323"
+            isSubstitutable="false">
+            <classMoniker
+              Id="458117d8-cb9e-471a-82f5-de756dc591f2"
+              LastKnownName="Request"
+              LastKnownLocation="Package_0724.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="69f933f0-19e7-41cd-840a-6a1a6a456740"
+        name="TestRequestType"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b79a66d3-a3b4-469c-99f3-dea778ba431c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="dacf159d-16ca-4f3b-9841-f72c06c183fa"
+              LastKnownName="RequestType"
+              LastKnownLocation="Package_0724.uml" />
+          </generalization>
+          <generalization
+            Id="81e9c935-ba75-4668-93b5-97ff49e49156"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5631cdb3-d75a-4bc6-8d9f-a530912731da"
+              LastKnownName="IRequestType"
+              LastKnownLocation="Package_0724.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0d9b3acd-1d18-4f4b-8451-56a0607ec9cc"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d1f6c358-045c-4444-aaa9-51ec9b4014bb"
+        name="NUnit"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3930ad7e-0685-4dda-b944-eb7d6e505551"
+            isSubstitutable="false">
+            <classMoniker
+              Id="69f933f0-19e7-41cd-840a-6a1a6a456740"
+              LastKnownName="TestRequestType"
+              LastKnownLocation="Package_0730.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7f89e794-5bb3-4cb0-9446-228afdee1349"
+        name="NAnt"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="c8e17c27-ff46-49ce-91ea-430e904b07d6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="69f933f0-19e7-41cd-840a-6a1a6a456740"
+              LastKnownName="TestRequestType"
+              LastKnownLocation="Package_0730.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1f7ae429-c13c-4d20-9df8-411050d75833"
+        name="Class4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="201e0fdd-871d-4c33-b0f6-901e71829c05"
+        name="TestRequestData"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f04938c4-5067-46a1-ac45-e5192697bac2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c2ac3377-2eeb-47a1-a658-d0ddfe4505f9"
+              LastKnownName="RequestData"
+              LastKnownLocation="Package_0724.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -61,23 +61,25 @@
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="31de9bce-ba61-48e4-b7a5-49711b7ff0b2" />
                 </association>
-                <association Id="ef1ca0a4-46ee-4302-a09a-3f7fe6f5d585" isDerived="false" sourceEndRoleName="Request" targetEndRoleName="RequestType" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="b016c836-144a-42b7-8031-45aceba0a19c" LastKnownName="RequestType" />
-                  <relationshipOwnedElementsInternal>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="d95b102f-f6c0-4f1b-9da9-9efe2a749edc" name="Request" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                        <elementDefinition Id="2311e71a-5560-41e6-94fd-8ebeb2c96c97" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="ef25af17-ccba-4145-bced-efe6a2e8a0e3" name="RequestType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                        <elementDefinition Id="ae8dd0b3-4d7d-4fc9-94fa-5c8234743de0" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                  </relationshipOwnedElementsInternal>
-                  <elementDefinition Id="a977c35b-9437-4e1c-9aa3-44647834a9fc" />
-                </association>
               </targetEnds>
+              <ownedRedefinableTemplateSignatureInternal>
+                <redefinableTemplateSignature Id="86127676-971b-4ca8-8bd0-60e1069c2193" parameters="" isLeaf="false">
+                  <elementDefinition Id="3018d8e4-fca9-4ed1-856d-77f7c8ba61a6" />
+                  <ownedParameters>
+                    <classifierTemplateParameter Id="632a90c9-062f-4fd0-aca7-5a154c82ed75">
+                      <elementDefinition Id="c6652cd0-d3ea-4b43-9ca3-5634043e3472" />
+                      <ownedParameterableElement>
+                        <class Id="c022f6ce-a71d-49b0-bca8-725c6e3f50b2" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
+                          <elementDefinition Id="7e835e78-3d40-402f-a41d-7c9baf5f61c2" />
+                        </class>
+                      </ownedParameterableElement>
+                      <constrainingClassifier>
+                        <referencedTypeMoniker Id="a923f640-fa0d-4c69-bd78-e6cc08cc7ce4" LastKnownName="IRequestType" />
+                      </constrainingClassifier>
+                    </classifierTemplateParameter>
+                  </ownedParameters>
+                </redefinableTemplateSignature>
+              </ownedRedefinableTemplateSignatureInternal>
               <ownedOperationsInternal>
                 <operation Id="ee64114a-97d0-41c0-9e9d-e64f8bdd875c" name="Process" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="e6d88833-d804-4280-b984-910308861bca" />
@@ -93,20 +95,9 @@
           <packageHasNamedElement>
             <class Id="da9d512b-c30d-492d-afda-3dac3d49a1aa" name="IRequestType" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="5631cdb3-d75a-4bc6-8d9f-a530912731da" />
-            </class>
-          </packageHasNamedElement>
-          <packageHasNamedElement>
-            <class Id="b016c836-144a-42b7-8031-45aceba0a19c" name="RequestType" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="dacf159d-16ca-4f3b-9841-f72c06c183fa" />
-              <generalsInternal>
-                <generalization Id="fa072e7c-6137-404a-9e37-87059cb11d80" isSubstitutable="false">
-                  <classMoniker Id="da9d512b-c30d-492d-afda-3dac3d49a1aa" LastKnownName="IRequestType" />
-                  <elementDefinition Id="9056e902-69c4-4d43-b4a7-8d9ea350a796" />
-                </generalization>
-              </generalsInternal>
               <ownedOperationsInternal>
-                <operation Id="fbd0689c-da93-41c5-9b7d-a7bad49a415c" name="Execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="cfbc8891-a07b-499f-920f-6e02352cc48a" />
+                <operation Id="4804de6c-4e8d-4c6f-b73a-dfb9e848549a" name="Execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6d9da260-aea0-464e-aa10-a2f6879776ce" />
                 </operation>
               </ownedOperationsInternal>
             </class>
@@ -145,6 +136,9 @@
                 <property Id="70c0500c-46c4-4d66-a942-3fc3729dfabc" name="Language" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="9968ecc8-fad9-417a-b694-e81921f29110" />
                 </property>
+                <property Id="d23e5ba7-8847-4308-bb3c-ce01d63fa090" name="Version" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a4acdb30-8a63-4277-a1e1-8e0d0331c3c6" />
+                </property>
               </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
@@ -152,9 +146,9 @@
             <class Id="597775c6-f4c4-4bf5-a371-08a1483ccdc2" name="CompileRequestType" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="0bf3f8a0-c4c4-4834-aa0d-8bc9de8eaac1" />
               <generalsInternal>
-                <generalization Id="7ff39c8e-402a-4748-bbd8-059e5a00e4f4" isSubstitutable="false">
-                  <classMoniker Id="b016c836-144a-42b7-8031-45aceba0a19c" LastKnownName="RequestType" />
-                  <elementDefinition Id="c3485bb1-0e9c-41df-967e-d92da9e0cc3e" />
+                <generalization Id="874eb784-250e-48c2-96e6-65cab18019e4" isSubstitutable="false">
+                  <classMoniker Id="da9d512b-c30d-492d-afda-3dac3d49a1aa" LastKnownName="IRequestType" />
+                  <elementDefinition Id="5708175d-bfcf-4829-b0d6-f7edd712d2e1" />
                 </generalization>
               </generalsInternal>
             </class>
@@ -176,12 +170,79 @@
     <logicalClassDesignerModelHasPackages>
       <package Id="ba459d8d-75f9-464e-9b89-ac209c93b3e3" name="CloudBuild.Requests.Test">
         <elementDefinition Id="06762b4f-4d2b-4558-bce0-535aecf41eef" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="df5cb604-5f81-4f16-87c0-078b462b7233" name="TestRequest" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="22097e54-2edb-4092-bcb9-7a5bffd98cd9" />
+              <generalsInternal>
+                <generalization Id="8de0b8e3-b1b7-42df-b6b8-ad0ede5a5b7f" isSubstitutable="false">
+                  <classMoniker Id="00987d30-bad2-4b16-b288-d060f7cbdb76" LastKnownName="Request" />
+                  <elementDefinition Id="811a6506-ea7a-4dfc-9dd2-c17fd2555323" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6fc99ee3-7cd0-4ceb-a101-c02ec79a911b" name="TestRequestType" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="69f933f0-19e7-41cd-840a-6a1a6a456740" />
+              <generalsInternal>
+                <generalization Id="0dec4d85-37e9-4f86-a692-f9c877bd6733" isSubstitutable="false">
+                  <classMoniker Id="da9d512b-c30d-492d-afda-3dac3d49a1aa" LastKnownName="IRequestType" />
+                  <elementDefinition Id="81e9c935-ba75-4668-93b5-97ff49e49156" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="29b58008-d9ab-476a-b77a-fb45c84525ed" name="Execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0d9b3acd-1d18-4f4b-8451-56a0607ec9cc" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="5eb239ad-d5c6-4992-a94a-195a6433db9b" name="NUnit" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d1f6c358-045c-4444-aaa9-51ec9b4014bb" />
+              <generalsInternal>
+                <generalization Id="3562a7cc-ae5f-44c7-8646-29da51a2c89b" isSubstitutable="false">
+                  <classMoniker Id="6fc99ee3-7cd0-4ceb-a101-c02ec79a911b" LastKnownName="TestRequestType" />
+                  <elementDefinition Id="3930ad7e-0685-4dda-b944-eb7d6e505551" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6891e7a6-0135-491c-855c-292201ebef82" name="NAnt" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="7f89e794-5bb3-4cb0-9446-228afdee1349" />
+              <generalsInternal>
+                <generalization Id="d02799c9-1afa-460b-8731-1af4a4f577a6" isSubstitutable="false">
+                  <classMoniker Id="6fc99ee3-7cd0-4ceb-a101-c02ec79a911b" LastKnownName="TestRequestType" />
+                  <elementDefinition Id="c8e17c27-ff46-49ce-91ea-430e904b07d6" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="952c587f-95bc-48b4-924f-52f00e1bed3e" name="TestRequestData" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="201e0fdd-871d-4c33-b0f6-901e71829c05" />
+              <generalsInternal>
+                <generalization Id="893b3789-20b7-40ad-9029-939b30bc1781" isSubstitutable="false">
+                  <classMoniker Id="2fd6c869-1360-45b2-a482-a4ac8b8b8164" LastKnownName="RequestData" />
+                  <elementDefinition Id="f04938c4-5067-46a1-ac45-e5192697bac2" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
     <packageHasNamedElement>
       <class Id="510fcee6-0206-4b28-96fb-1cc2b4e9424b" name="RequestFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6743211e-67e8-45d3-9153-cfdc43793144" />
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a923f640-fa0d-4c69-bd78-e6cc08cc7ce4" name="IRequestType" isAbstract="false" isLeaf="false" cachedFullName="Crossover::CloudBuild.Request.Core::IRequestType">
+        <elementDefinition Id="5631cdb3-d75a-4bc6-8d9f-a530912731da" />
+      </referencedType>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="f8e1fdf3-cd6e-4dd9-9ab9-501835c2fc50" name="Crossover">

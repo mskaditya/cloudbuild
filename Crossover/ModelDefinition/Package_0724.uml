@@ -125,6 +125,32 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="3018d8e4-fca9-4ed1-856d-77f7c8ba61a6"
+            parameters=""
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="c6652cd0-d3ea-4b43-9ca3-5634043e3472">
+                <ownedParameterableElement>
+                  <class
+                    Id="7e835e78-3d40-402f-a41d-7c9baf5f61c2"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+                <constrainingClassifier>
+                  <classMoniker
+                    Id="5631cdb3-d75a-4bc6-8d9f-a530912731da"
+                    LastKnownName="IRequestType"
+                    LastKnownLocation="Package_0724.uml" />
+                </constrainingClassifier>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
         <ownedOperationsInternal>
           <operation
             Id="e6d88833-d804-4280-b984-910308861bca"
@@ -158,13 +184,24 @@
         name="IRequestType"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="6d9da260-aea0-464e-aa10-a2f6879776ce"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="dacf159d-16ca-4f3b-9841-f72c06c183fa"
         name="RequestType"
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <generalsInternal>

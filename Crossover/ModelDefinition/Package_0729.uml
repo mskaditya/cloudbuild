@@ -63,6 +63,17 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="a4acdb30-8a63-4277-a1e1-8e0d0331c3c6"
+            name="Version"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -80,6 +91,14 @@
             <classMoniker
               Id="dacf159d-16ca-4f3b-9841-f72c06c183fa"
               LastKnownName="RequestType"
+              LastKnownLocation="Package_0724.uml" />
+          </generalization>
+          <generalization
+            Id="5708175d-bfcf-4829-b0d6-f7edd712d2e1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5631cdb3-d75a-4bc6-8d9f-a530912731da"
+              LastKnownName="IRequestType"
               LastKnownLocation="Package_0724.uml" />
           </generalization>
         </generalsInternal>
