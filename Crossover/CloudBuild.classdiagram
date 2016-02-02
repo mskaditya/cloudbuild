@@ -244,6 +244,84 @@
         <elementDefinition Id="5631cdb3-d75a-4bc6-8d9f-a530912731da" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="f490013b-31e7-45e3-9d60-cc166d7343cf" name="RequestExecutor">
+        <elementDefinition Id="818cb28a-74ab-417f-8f5e-76781c605b67" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="27d55278-d1d2-4fb8-b641-ceed7a4afd38" name="RequestQueue" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="71782625-5574-4a01-8683-e22dcc6bf731" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e462d91f-1bca-4a6f-a892-e276cf9f5aa6" name="RequestProcessor" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="fe0b7b38-089b-4fbf-8812-de5b4454fb76" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="3fbd1928-57cc-40d8-bf23-a3aeef025c4e" name="Requests" isAbstract="false" isLeaf="false" cachedFullName="Requests">
+        <elementDefinition Id="c8e07b47-6b75-4b69-9610-6be4e2d5e18d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="b6157ad8-b389-41e2-b259-09018736d078" name="CloudBuild.RequestBuilder">
+        <elementDefinition Id="05d2e5bc-3f78-49af-837e-b328eb7d9303" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="1a112a8e-c0e0-4dbc-8b11-0dbf037d3274" name="RequestBuilder" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="88e8211c-2bec-423f-bf76-e697f3ee8605" />
+              <ownedOperationsInternal>
+                <operation Id="afac38b1-82f1-4509-b594-f42aa077daf8" name="BuildRequests" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8157abbc-986f-4864-b88a-ac42809d8f01" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="129bb475-dfe0-4eff-8c3b-6f25fb6fecc6" direction="Return" isUnique="false">
+                        <elementDefinition Id="a308af4b-5aed-43c3-9d82-3f6f71dc119a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="3fbd1928-57cc-40d8-bf23-a3aeef025c4e" LastKnownName="Requests" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="bf1351c3-c9de-4649-8ec6-b4d98c2e5d5e" name="RequestFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8655464a-5147-4d35-aafe-7f53337537b5" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="121d0feb-5bdc-4dad-84cf-02a9bd525f5f" name="Cloud.RequestSender">
+        <elementDefinition Id="41105c2a-eb2a-4f2e-b25f-c605d1339e56" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="393633e6-7707-48b0-98d0-e0dbeca6f388" name="RequestSender" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d0ea3aab-79ea-4ccf-afbe-2076522c7c6b" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="a065d968-9af8-4e6f-a7f0-f6b1d9ee144e" name="CloudBuild.RequestListener">
+        <elementDefinition Id="4be8b51d-edf3-440a-b0f4-ab7be89fc9d9" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="aed1c697-9f5f-4337-ac1f-a0bf062e4325" name="RequestListener" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5c060f0a-f51a-49d4-a399-599996471904" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
   </packagedElements>
   <package Id="f8e1fdf3-cd6e-4dd9-9ab9-501835c2fc50" name="Crossover">
     <elementDefinition Id="cf80630a-e483-4f91-b9fd-c5c38cf36f5c" />

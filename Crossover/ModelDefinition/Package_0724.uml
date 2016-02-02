@@ -226,5 +226,10 @@
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c8e07b47-6b75-4b69-9610-6be4e2d5e18d"
+        name="Requests" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

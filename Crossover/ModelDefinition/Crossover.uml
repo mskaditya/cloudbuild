@@ -100,6 +100,30 @@
         LastKnownName="CloudBuild.Requests.Test"
         LastKnownLocation="Package_0730.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="818cb28a-74ab-417f-8f5e-76781c605b67"
+        LastKnownName="RequestExecutor"
+        LastKnownLocation="Package_0819.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="05d2e5bc-3f78-49af-837e-b328eb7d9303"
+        LastKnownName="CloudBuild.RequestBuilder"
+        LastKnownLocation="Package_0835.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="41105c2a-eb2a-4f2e-b25f-c605d1339e56"
+        LastKnownName="Cloud.RequestSender"
+        LastKnownLocation="Package_0838.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4be8b51d-edf3-440a-b0f4-ab7be89fc9d9"
+        LastKnownName="CloudBuild.RequestListener"
+        LastKnownLocation="Package_0840.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
