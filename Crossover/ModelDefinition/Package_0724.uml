@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="48e60eb3-c7de-4070-b04d-97a24888211b"
+  name="CloudBuild.Request.Core" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="e824ad15-86ae-40be-9262-1ed5f4b8e352"
+        name="IRequestData"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c2ac3377-2eeb-47a1-a658-d0ddfe4505f9"
+        name="RequestData"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="5a848e71-f8b4-4088-ba53-5d0174c7e936">
+            <interfaceMoniker
+              Id="e824ad15-86ae-40be-9262-1ed5f4b8e352"
+              LastKnownName="IRequestData"
+              LastKnownLocation="Package_0724.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="458117d8-cb9e-471a-82f5-de756dc591f2"
+        name="Request"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a59fb485-175b-4e29-961b-f709ebd482e8">
+            <interfaceMoniker
+              Id="7009ce65-9399-423c-9b9b-96f3bf897de2"
+              LastKnownName="IRequest"
+              LastKnownLocation="Package_0724.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="31de9bce-ba61-48e4-b7a5-49711b7ff0b2"
+            isDerived="false"
+            sourceEndRoleName="Request"
+            targetEndRoleName="RequestData"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c2ac3377-2eeb-47a1-a658-d0ddfe4505f9"
+              LastKnownName="RequestData"
+              LastKnownLocation="Package_0724.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7428cd4-cefe-4d84-8d4a-004b66d8652c"
+                  name="Request"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="21561824-efca-45c3-943a-934d59908e0d"
+                  name="RequestData"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a977c35b-9437-4e1c-9aa3-44647834a9fc"
+            isDerived="false"
+            sourceEndRoleName="Request"
+            targetEndRoleName="RequestType"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dacf159d-16ca-4f3b-9841-f72c06c183fa"
+              LastKnownName="RequestType"
+              LastKnownLocation="Package_0724.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2311e71a-5560-41e6-94fd-8ebeb2c96c97"
+                  name="Request"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ae8dd0b3-4d7d-4fc9-94fa-5c8234743de0"
+                  name="RequestType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="e6d88833-d804-4280-b984-910308861bca"
+            name="Process"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="7009ce65-9399-423c-9b9b-96f3bf897de2"
+        name="IRequest"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6743211e-67e8-45d3-9153-cfdc43793144"
+        name="RequestFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5631cdb3-d75a-4bc6-8d9f-a530912731da"
+        name="IRequestType"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dacf159d-16ca-4f3b-9841-f72c06c183fa"
+        name="RequestType"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="9056e902-69c4-4d43-b4a7-8d9ea350a796"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5631cdb3-d75a-4bc6-8d9f-a530912731da"
+              LastKnownName="IRequestType"
+              LastKnownLocation="Package_0724.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cfbc8891-a07b-499f-920f-6e02352cc48a"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

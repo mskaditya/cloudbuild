@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="4e90ce56-5405-43ce-83b4-f6c0d91996e4" name="CloudBuildHLD" linkedPackageId="0c2f55fe-8218-44da-b122-0509cef630ec" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="21f63122-9fb9-4cae-bfbb-0f0b055c67e0">
+      <elementDefinition Id="54e42d06-0d1b-41f6-b7aa-3e785fa124ec" />
+      <body>Aum Sri Sairam</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="8da76605-1ec0-47e6-a287-c135c24c13d7">
+      <profileInstance Id="18bf9e78-2633-4ef3-9a22-003578c30809" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7374af64-bb1d-426a-933b-2636bc0e8717">
+      <profileInstance Id="f1ea7d4b-aa0e-4d08-abb1-daa22478951e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="9497984c-da95-49ed-a489-eeb9d1ef2d99" name="CloudBuildServer.exe" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="96a380d8-2c4a-4e26-a894-c0f7eddfe75f" name="service" profile="StandardProfileL2">
+            <elementDefinition Id="254e1a0d-84da-4240-aeb6-979a93342cf6" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="3285ddf3-d610-4f8a-9469-f18db9af0b3f" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="3a9c21d2-42b9-4e5b-8672-da87d10606a1" name="CloudBuildClient.exe" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="17aad77c-ce2e-4e51-8702-1d92c8fa4e16" name="process" profile="StandardProfileL2">
+            <elementDefinition Id="130cb9f3-8b2d-41c3-98ab-fe1f42db043c" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="e26ab0d7-b54b-436b-959c-28cd73497e34" />
+        <suppliersInternal>
+          <dependency Id="1e476dca-fae2-4f3e-841b-eb44d7a9ec9f">
+            <componentMoniker Id="9497984c-da95-49ed-a489-eeb9d1ef2d99" LastKnownName="CloudBuildServer.exe" />
+            <elementDefinition Id="32a327a2-16fe-4aa9-9736-8e8baf942485" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="0c2f55fe-8218-44da-b122-0509cef630ec" name="Crossover">
+    <elementDefinition Id="cf80630a-e483-4f91-b9fd-c5c38cf36f5c" />
+  </package>
+</componentModel>

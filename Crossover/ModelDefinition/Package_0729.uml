@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="09c943c3-d1c0-4151-ac0c-65a2a5dd83dc"
+  name="CloudBuild.Requests.Compile" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="209c2b95-adb7-40a7-b0a8-3af6631c9897"
+        name="CompileRequest"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d9186da2-932e-4830-86f2-a1ad7b51888b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="458117d8-cb9e-471a-82f5-de756dc591f2"
+              LastKnownName="Request"
+              LastKnownLocation="Package_0724.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e2e9cfa4-042f-4466-a89d-49b2eba599da"
+        name="CompileRequestData"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="7cf3ddf3-5c75-48aa-a939-70486e46e429"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c2ac3377-2eeb-47a1-a658-d0ddfe4505f9"
+              LastKnownName="RequestData"
+              LastKnownLocation="Package_0724.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="cbf78d5d-a72c-4588-b329-e4c8f9211488"
+            name="CompilerType"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9968ecc8-fad9-417a-b694-e81921f29110"
+            name="Language"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0bf3f8a0-c4c4-4834-aa0d-8bc9de8eaac1"
+        name="CompileRequestType"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="c3485bb1-0e9c-41df-967e-d92da9e0cc3e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="dacf159d-16ca-4f3b-9841-f72c06c183fa"
+              LastKnownName="RequestType"
+              LastKnownLocation="Package_0724.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2d3b4e87-a9cc-4b09-a50d-8373f16d134e"
+        name="CSharp"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="348dc335-d883-4bd8-a583-9574d9e63a65"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0bf3f8a0-c4c4-4834-aa0d-8bc9de8eaac1"
+              LastKnownName="CompileRequestType"
+              LastKnownLocation="Package_0729.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

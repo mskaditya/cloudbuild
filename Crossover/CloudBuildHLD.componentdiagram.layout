@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CloudBuildHLD">
+  <componentModelMoniker Id="4e90ce56-5405-43ce-83b4-f6c0d91996e4" />
+  <nestedChildShapes>
+    <commentShape Id="5afb801e-4d6f-48c9-abbd-c5320f6a9239" absoluteBounds="4.5, 0.5, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="21f63122-9fb9-4cae-bfbb-0f0b055c67e0" />
+      <relativeChildShapes />
+    </commentShape>
+    <componentShape Id="0ee81d21-2f62-4b0c-99ce-be874147b42b" absoluteBounds="1.25, 1.125, 5.4791666666666661, 2.0645833333333332" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="9497984c-da95-49ed-a489-eeb9d1ef2d99" LastKnownName="CloudBuildServer.exe" />
+    </componentShape>
+    <componentShape Id="503dd0a7-0e3d-41b7-8a1c-0a386228f990" absoluteBounds="1.125, 4.375, 2.614583333333333, 1.3145833333333332" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="3a9c21d2-42b9-4e5b-8672-da87d10606a1" LastKnownName="CloudBuildClient.exe" />
+    </componentShape>
+    <dependencyConnector edgePoints="[(2.36979166666667 : 4.375); (2.36979166666667 : 4); (3.98958333333333 : 4); (3.98958333333333 : 3.18958333333333)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="1e476dca-fae2-4f3e-841b-eb44d7a9ec9f" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="503dd0a7-0e3d-41b7-8a1c-0a386228f990" />
+        <componentShapeMoniker Id="0ee81d21-2f62-4b0c-99ce-be874147b42b" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</componentDiagram>
