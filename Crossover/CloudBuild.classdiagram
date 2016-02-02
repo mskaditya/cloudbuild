@@ -235,17 +235,12 @@
       </package>
     </logicalClassDesignerModelHasPackages>
     <packageHasNamedElement>
-      <class Id="510fcee6-0206-4b28-96fb-1cc2b4e9424b" name="RequestFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="6743211e-67e8-45d3-9153-cfdc43793144" />
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="a923f640-fa0d-4c69-bd78-e6cc08cc7ce4" name="IRequestType" isAbstract="false" isLeaf="false" cachedFullName="Crossover::CloudBuild.Request.Core::IRequestType">
         <elementDefinition Id="5631cdb3-d75a-4bc6-8d9f-a530912731da" />
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasPackages>
-      <package Id="f490013b-31e7-45e3-9d60-cc166d7343cf" name="RequestExecutor">
+      <package Id="f490013b-31e7-45e3-9d60-cc166d7343cf" name="CloudBuild.Request.Execute">
         <elementDefinition Id="818cb28a-74ab-417f-8f5e-76781c605b67" />
         <packagedElements>
           <packageHasNamedElement>
@@ -256,6 +251,19 @@
           <packageHasNamedElement>
             <class Id="e462d91f-1bca-4a6f-a892-e276cf9f5aa6" name="RequestProcessor" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="fe0b7b38-089b-4fbf-8812-de5b4454fb76" />
+              <ownedOperationsInternal>
+                <operation Id="05272337-11c5-4dc6-8c0a-1eea9ca4f302" name="RegisterRequests" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c468bdaf-814c-4c4e-bca2-89077e269d19" />
+                </operation>
+                <operation Id="f6f7ef24-e60a-4e76-a812-b74b547b157e" name="ExecuteRequests" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="212c775a-990e-4752-bcc8-bc32954ecfa9" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="510fcee6-0206-4b28-96fb-1cc2b4e9424b" name="RequestFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6743211e-67e8-45d3-9153-cfdc43793144" />
             </class>
           </packageHasNamedElement>
         </packagedElements>
@@ -267,7 +275,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasPackages>
-      <package Id="b6157ad8-b389-41e2-b259-09018736d078" name="CloudBuild.RequestBuilder">
+      <package Id="b6157ad8-b389-41e2-b259-09018736d078" name="CloudBuild.Request.Build">
         <elementDefinition Id="05d2e5bc-3f78-49af-837e-b328eb7d9303" />
         <packagedElements>
           <packageHasNamedElement>
@@ -299,25 +307,118 @@
       </package>
     </logicalClassDesignerModelHasPackages>
     <logicalClassDesignerModelHasPackages>
-      <package Id="121d0feb-5bdc-4dad-84cf-02a9bd525f5f" name="Cloud.RequestSender">
+      <package Id="121d0feb-5bdc-4dad-84cf-02a9bd525f5f" name="Cloud.Request.IO">
         <elementDefinition Id="41105c2a-eb2a-4f2e-b25f-c605d1339e56" />
         <packagedElements>
           <packageHasNamedElement>
             <class Id="393633e6-7707-48b0-98d0-e0dbeca6f388" name="RequestSender" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="d0ea3aab-79ea-4ccf-afbe-2076522c7c6b" />
+              <suppliersInternal>
+                <interfaceRealization Id="4021e152-b8d5-415f-9b32-d6cf459b3a55">
+                  <interfaceMoniker Id="a8ca1119-5daf-4a3d-9435-0287e01e3470" LastKnownName="IRequestSender" />
+                  <elementDefinition Id="32dcfa40-25a0-42a4-ae3f-ea2f122d8ad9" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="c23b10b8-30ce-4771-8023-d2ece8c126d2" name="SendRequest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="44a65ab4-c8a2-45db-b8e4-38c3e9b23c55" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="a8ca1119-5daf-4a3d-9435-0287e01e3470" name="IRequestSender" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="c618a8c8-f26d-4206-9f5b-2cbcfcb43e93" />
+              <ownedOperations>
+                <operation Id="e57c5d01-2550-4eef-a11a-0284e5b80532" name="SendRequest" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="29ee846b-bedc-456c-b56a-00c08451adad" />
+                </operation>
+              </ownedOperations>
+            </Interface>
           </packageHasNamedElement>
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
     <logicalClassDesignerModelHasPackages>
-      <package Id="a065d968-9af8-4e6f-a7f0-f6b1d9ee144e" name="CloudBuild.RequestListener">
+      <package Id="a065d968-9af8-4e6f-a7f0-f6b1d9ee144e" name="CloudBuild.Request.IO">
         <elementDefinition Id="4be8b51d-edf3-440a-b0f4-ab7be89fc9d9" />
         <packagedElements>
           <packageHasNamedElement>
             <class Id="aed1c697-9f5f-4337-ac1f-a0bf062e4325" name="RequestListener" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="5c060f0a-f51a-49d4-a399-599996471904" />
+              <suppliersInternal>
+                <interfaceRealization Id="e4081750-b314-4cbd-93c4-dd3e5ae37086">
+                  <interfaceMoniker Id="04774c01-1953-4254-9ee8-576f5672a3b3" LastKnownName="IRequestListener" />
+                  <elementDefinition Id="898ee970-5285-429b-b32d-a5a39a5198b4" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="ef90fdf7-923d-4a12-b31a-8fe9b74800ac" name="ReadRequests" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="230a014b-2752-4d97-89c3-69123b175096" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="04774c01-1953-4254-9ee8-576f5672a3b3" name="IRequestListener" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="6b42a66d-4ecb-4f17-8469-ba482b3104ae" />
+              <ownedOperations>
+                <operation Id="926304a8-dbd2-4905-b441-d76405cce426" name="ReadRequests" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="707b7916-b61a-4f5c-ad2d-92b3c24513bf" />
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="04c30835-d552-4b63-9ba9-4521b579ec1d" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fe8343f4-dc8d-4cc5-8429-2cd453a2fc96" />
+        <suppliersInternal>
+          <interfaceRealization Id="97040214-3c8e-4bad-a5fe-2a861254e8fb">
+            <interfaceMoniker Id="4e2a203b-d6e2-4f41-be81-ec0d81008f18" LastKnownName="IClient" />
+            <elementDefinition Id="3151cf58-b7c3-4614-975c-ba19a529835e" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="9be55ff7-02af-4fcb-8b36-d8f620a42d18" name="Register" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d05b2856-f9e4-403b-8e2d-e65b07e018c1" />
+          </operation>
+          <operation Id="2af93caf-ae5b-4de0-a3fa-05ece023c689" name="UnRegister" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eb34d61a-e6ef-4ca0-a6e2-b19e4f06fdaa" />
+          </operation>
+          <operation Id="23c8ee6a-02a5-4e4f-85ec-d02834be7b4e" name="KeepAlive" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3990000d-abff-4873-82bd-1ef926cc06c7" />
+          </operation>
+          <operation Id="dc6a0574-4232-4b01-9c79-8ec7f1758206" name="ReportError" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eb45c9c4-c5db-4e12-a60a-046e77794f0b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="101b4687-221e-47a4-b471-7b35136e25eb" name="CloudBuild.Client.Registration">
+        <elementDefinition Id="3ae016e2-de6d-4804-8882-5403777f2f87" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <Interface Id="4e2a203b-d6e2-4f41-be81-ec0d81008f18" name="IClient" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="fde4be10-1281-4be8-bf98-4d41c2a036a8" />
+              <ownedOperations>
+                <operation Id="aa6dfd80-0690-4dd2-ad55-e15efc294564" name="Register" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bace6f14-14ec-46e8-8f0f-5eb2cc33d779" />
+                </operation>
+                <operation Id="769c1b2f-fc49-4e81-9395-b60840fa6d0c" name="UnRegister" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0db15896-8ef5-4ea4-a97c-0d0dbafbb8df" />
+                </operation>
+                <operation Id="74a983d7-372a-4526-abab-3b7ab0f3496e" name="KeepAlive" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c44a2e9b-08f6-4333-a376-0e1ad387eaaa" />
+                </operation>
+                <operation Id="4aae99c2-1c5e-4d53-8f7c-769f7984ee7a" name="ReportError" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a8cd23bb-df21-463b-bffd-0135d2434810" />
+                </operation>
+              </ownedOperations>
+            </Interface>
           </packageHasNamedElement>
         </packagedElements>
       </package>

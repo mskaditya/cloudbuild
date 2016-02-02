@@ -103,26 +103,84 @@
     <packageHasNamedElement>
       <packageMoniker
         Id="818cb28a-74ab-417f-8f5e-76781c605b67"
-        LastKnownName="RequestExecutor"
+        LastKnownName="CloudBuild.Request.Execute"
         LastKnownLocation="Package_0819.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <packageMoniker
         Id="05d2e5bc-3f78-49af-837e-b328eb7d9303"
-        LastKnownName="CloudBuild.RequestBuilder"
+        LastKnownName="CloudBuild.Request.Build"
         LastKnownLocation="Package_0835.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <packageMoniker
         Id="41105c2a-eb2a-4f2e-b25f-c605d1339e56"
-        LastKnownName="Cloud.RequestSender"
+        LastKnownName="Cloud.Request.IO"
         LastKnownLocation="Package_0838.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <packageMoniker
         Id="4be8b51d-edf3-440a-b0f4-ab7be89fc9d9"
-        LastKnownName="CloudBuild.RequestListener"
+        LastKnownName="CloudBuild.Request.IO"
         LastKnownLocation="Package_0840.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fe8343f4-dc8d-4cc5-8429-2cd453a2fc96"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="3151cf58-b7c3-4614-975c-ba19a529835e">
+            <interfaceMoniker
+              Id="fde4be10-1281-4be8-bf98-4d41c2a036a8"
+              LastKnownName="IClient"
+              LastKnownLocation="Package_1249.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d05b2856-f9e4-403b-8e2d-e65b07e018c1"
+            name="Register"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="eb34d61a-e6ef-4ca0-a6e2-b19e4f06fdaa"
+            name="UnRegister"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3990000d-abff-4873-82bd-1ef926cc06c7"
+            name="KeepAlive"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="eb45c9c4-c5db-4e12-a60a-046e77794f0b"
+            name="ReportError"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="3ae016e2-de6d-4804-8882-5403777f2f87"
+        LastKnownName="CloudBuild.Client.Registration"
+        LastKnownLocation="Package_1249.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -46,6 +46,9 @@
     <Content Include="ModelDefinition\Package_0840.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package_1249.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="CloudBuild.classdiagram">
       <SubType>Content</SubType>

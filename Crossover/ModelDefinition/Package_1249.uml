@@ -1,51 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
-  Id="818cb28a-74ab-417f-8f5e-76781c605b67"
-  name="CloudBuild.Request.Execute" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  Id="3ae016e2-de6d-4804-8882-5403777f2f87"
+  name="CloudBuild.Client.Registration" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <packagedElements>
     <packageHasNamedElement>
-      <class
-        Id="71782625-5574-4a01-8683-e22dcc6bf731"
-        name="RequestQueue"
+      <Interface
+        Id="fde4be10-1281-4be8-bf98-4d41c2a036a8"
+        name="IClient"
         isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="fe0b7b38-089b-4fbf-8812-de5b4454fb76"
-        name="RequestProcessor"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <ownedOperationsInternal>
+        isLeaf="false">
+        <ownedOperations>
           <operation
-            Id="c468bdaf-814c-4c4e-bca2-89077e269d19"
-            name="RegisterRequests"
+            Id="bace6f14-14ec-46e8-8f0f-5eb2cc33d779"
+            name="Register"
             isLeaf="false"
             isStatic="false"
-            isAbstract="false"
+            isAbstract="true"
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="212c775a-990e-4752-bcc8-bc32954ecfa9"
-            name="ExecuteRequests"
+            Id="0db15896-8ef5-4ea4-a97c-0d0dbafbb8df"
+            name="UnRegister"
             isLeaf="false"
             isStatic="false"
-            isAbstract="false"
+            isAbstract="true"
             concurrency="Sequential"
             isQuery="false" />
-        </ownedOperationsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="6743211e-67e8-45d3-9153-cfdc43793144"
-        name="RequestFactory"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
+          <operation
+            Id="c44a2e9b-08f6-4333-a376-0e1ad387eaaa"
+            name="KeepAlive"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a8cd23bb-df21-463b-bffd-0135d2434810"
+            name="ReportError"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
     </packageHasNamedElement>
   </packagedElements>
 </package>

@@ -172,14 +172,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="6743211e-67e8-45d3-9153-cfdc43793144"
-        name="RequestFactory"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
         Id="5631cdb3-d75a-4bc6-8d9f-a530912731da"
         name="IRequestType"
         isAbstract="false"
